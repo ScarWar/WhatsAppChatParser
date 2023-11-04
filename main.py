@@ -1,5 +1,7 @@
 # Import the modules
 import zipfile
+from kivy.app import App
+from kivy.core.window import Window
 
 
 # Define a function to handle the file drop event
@@ -18,12 +20,8 @@ def on_drop(file_path):
         print("The file is not a zip file")
 
 
-from kivy.app import App
-from kivy.core.window import Window
-
-
 class WhatsAppChatExtractor(App):
-    title = 'WhatsApp Chat Extractor'
+    title = "WhatsApp Chat Extractor"
 
     def build(self):
         Window.bind(on_dropfile=self._on_file_drop)
@@ -34,5 +32,5 @@ class WhatsAppChatExtractor(App):
         return
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     WhatsAppChatExtractor().run()
