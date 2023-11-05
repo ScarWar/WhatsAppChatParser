@@ -1,4 +1,5 @@
 *Chat/*
 *.csv
 *.pkl
-*.xslx
+*.xlsx
+*.pyc
