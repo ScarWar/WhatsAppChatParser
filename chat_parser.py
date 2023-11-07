@@ -116,10 +116,10 @@ def _parse_chat_file(extracted_zip_path: str, output_filepath: str):
     #     language.unicode_direction_mark_char
     # ).ge(0)
 
-    chat.to_csv(output_filepath, index=False)
+    # chat.to_csv(output_filepath, index=False)
 
     # # Export to excel
-    # chat.to_excel("./chat.xlsx", index=None, header=True)
+    chat.to_excel(f"{output_filepath}.xlsx", index=None, header=True)
 
     return output_filepath
 

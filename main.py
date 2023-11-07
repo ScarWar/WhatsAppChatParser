@@ -1,3 +1,10 @@
+import os
+import sys
+
+if hasattr(sys, "_MEIPASS"):
+    os.environ["KIVY_NO_CONSOLELOG"] = "1"
+
+
 # Import the modules
 from pathlib import Path
 import chat_parser
